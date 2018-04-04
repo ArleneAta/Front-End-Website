@@ -5,7 +5,7 @@
 
     <h1>Current Students</h1>
 
-    <div class="students-container">
+    <div class="grid-container">
         
         <!-- read students csv file and place into grid items -->
         <?php

@@ -2,7 +2,7 @@
     include("header.php");
 ?> 
 <main class="schedule">
-    <h1>Schedule</h1>
+    <h1>Class Schedule</h1>
     <div class="calendar">
 
 
