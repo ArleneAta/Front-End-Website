@@ -692,6 +692,53 @@ footer {
       content: "|";
       color: white; }
 
+.program-main {
+  display: grid;
+  /*grid-template-columns: repeat(2, minmax(auto, 540px));*/
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sec_one sec_one" "sec_two sec_two" "sec_three sec_three"; }
+
+.program-img {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/technology.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  margin: 0;
+  opacity: 0.85;
+  grid-area: sec_one; }
+
+.program-overview {
+  grid-area: sec_two; }
+
+.program-overview p {
+  text-align: center justify;
+  padding: 0 15%; }
+
+.program-application {
+  grid-area: sec_three;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.program-entry h3, h4,
+.program-intake h3, p, a {
+  text-align: center; }
+
+.program-entry p {
+  text-align: center;
+  padding: 0 10%; }
+
+.program-entry ol {
+  width: 90%;
+  margin: auto; }
+
+@media only screen and (max-width: 540px) {
+  .program-application {
+    grid-area: sec_three;
+    display: grid;
+    grid-template-columns: 1fr; } }
 .table {
   font-size: 1.5rem;
   text-align: left;
