@@ -1,0 +1,97 @@
+// Colors
+// Colors
+$brand-color: #003E6B;
+$bg-body-color: #303030;
+$bg-wrapper-color: white;
+$bg-nav-hover-color: #f8f9fa;
+$bg-footer-color: #999999;
+
+
+
+
+$offwhite:    #EEE8D6;
+$darkblue:    #022933;
+$yellow:      #FFBA00;
+$blue:        #0076A3;
+$green:       #548C27;
+$orange:      #F39856;
+$red:         #D14348;
+$purple:      #6D73C2;
+
+
+
+
+$color-main: $darkblue;
+$color-backgrounds: $offwhite;
+$color-headlines: $red;
+// Text Colors
+$text-color-dark: black;
+$text-color-med: #454545;
+$text-color-light: white;
+$text-color-footer: #373d45;
+$text-color-footer-nav-hover: #4777b7; 
+
+// Site Colours
+$site-highlight-color: #FFF400;
+$site-stars-color: #ffde00;
+$site-stars-base-color: #cac8c8;
+
+// Border Colours
+$footer-border-color: #b2bcc7;
+
+// Fonts
+$body-font: Open Sans, Arial, sans-serif;
+$heading-font: Montserrat, Arial, sans-serif;
+
+
+$font-main: Merriweather, Helvetica, sans-serif;
+$font-highlight: Montserrat, Arial, sans-serif;
+
+// Typographic Defualts
+$line-height: 1.4;
+
+// Layout variables
+// Spacing
+$site-width: 1024px;
+$space: 30;
+$padding: rem($space);
+$half-padding: rem(($space / 2));
+$half-padding-mobile: rem((($space - 10) / 2));
+$header-height:100px;
+$header-height-mobile: 54px;
+
+// Grid Values
+
+// Column Gutter value
+$gutter: 2; // Roughly equivalent to 2%
+
+$one-col: 100%;
+$two-col: colWidth(2);
+$three-col: colWidth(3);
+$four-col: colWidth(4);
+$five-col: colWidth(5);
+$six-col: colWidth(6);
+
+
+// Media Query Breakpoints
+$desktopMedium: em(1250);
+$tabletLandscape: em(1024);
+$tabletPortrait: em(850);
+$phoneLandscape: em(670);
+$phonePortrait: em(420);
+
+// Utility variables
+$link-hover-selector: '&:hover, &:focus, &:active';
+
+$color-item-border: $red;
+$color-media-head:  $blue;
+
+$color-btn-text: $color-backgrounds;
+$roundness: 20px 0 20px 0;
+
+
+//breakpoints
+
+$small:		450px;
+$medium:	760px;
+$large:		1200px;

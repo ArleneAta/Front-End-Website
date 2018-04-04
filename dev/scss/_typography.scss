@@ -1,0 +1,16 @@
+// Typography Styles
+body {
+    font-family: $body-font;
+    line-height: $line-height;
+}
+
+h1, h2, h3, nav a, table {
+    font-family: $heading-font;
+}
+
+.market-blurb h2 {
+    font-size: 1.7em;
+    color: $darkblue;
+    width: 60%;
+    margin: em(50) auto;
+}

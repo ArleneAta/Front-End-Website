@@ -1,0 +1,38 @@
+// Footer Styles
+footer {
+    background-color: darken($bg-footer-color, 17%);
+    padding: $padding;
+    @include center;
+    p {
+        @include flatten;
+        text-align: center;
+        color: white;
+        padding: $padding;
+    }
+    nav {
+        
+
+        ul {
+            @include flex-layout-row;
+            @include center;
+            justify-content: space-around;
+            width: 80%;
+            font-size: 0.8em;
+            padding: $half-padding;
+            a {
+                padding: 0 em(20);
+            }
+            li:after {
+                content: "|";
+                color: white;
+                // padding: 0 em(15);
+                
+                // li:last-of-type {
+                //     content: "";
+                // }
+            }
+            
+        }
+        
+    }
+}

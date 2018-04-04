@@ -1,0 +1,83 @@
+nav {
+	header & {
+		background-color: darken($bg-footer-color, 15%);
+	}
+
+	.branding {
+		// float: left;
+		display: none;
+		@include break(1000px) {
+			display: block;
+		}
+	}
+
+	.branding h1 {
+		font-size: 2.75rem;
+		overflow: hidden;
+		margin: 0;
+		color: $yellow;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		// @include clearfix;
+	}
+
+	ul li {		
+		padding: 10px 5px;
+	}
+
+	ul li a {
+		text-decoration: none;
+		padding: 15px 5px;
+		color: white;
+		font-size: 1.2em;
+		&:hover {			
+			color: $yellow;
+		}
+
+		header &:hover {
+			background-color: darken($blue, 20%);
+		}
+	}
+}
+
+nav .container {
+	@include flex-layout-row;
+	justify-content: space-between;
+	
+}
+.main-nav {
+    height:$header-height;
+   
+    ul {
+        @include flex-layout-row;
+        margin: 0;
+    }
+    li {
+        // height:$header-height;
+		// flex: 1;
+		display: flex;
+		align-items: center;
+        list-style-type: none;
+        padding: $half-padding;
+
+        // #{$link-hover-selector}{
+        //     border-bottom: 4px $site-highlight-color solid;
+        //     background-color: $bg-nav-hover-color;
+        // }
+    }
+    // a {
+    //     display: block;
+    //     text-decoration: none;
+    //     color: $text-color-med;
+    //     font-size: 1.2em;
+    // }
+
+    @include mq($phoneLandscape){
+        height: $header-height-mobile;
+       @include center;
+    }
+}

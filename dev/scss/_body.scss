@@ -1,0 +1,118 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    font-family: $font-main;
+    color: $color-main;
+    background-color: $color-backgrounds;
+  }
+  
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  // $color-headlines: $blue, $purple, $green,
+  //   $red, $orange, $yellow;
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $font-highlight;
+  }
+  
+  // @for $item from 1 through length($color-headlines) {
+  //   h#{$item} {
+  //     color: nth($color-headlines, $item);
+  //   }
+  // }
+
+  
+  .media {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+    .item {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 10px;
+      border-top: 1px dotted $color-item-border;
+      &:hover {
+        background: $yellow;
+      }
+      &:last-of-type {
+        border-bottom: 1px dotted $color-item-border;
+      }
+      @include clearfix;
+    }
+  
+    .head {
+      margin: 0;
+      padding: 0;
+      color: $color-media-head;
+      font-size: 2rem;
+      #typography & {
+        color: $red;
+      }
+    }
+  
+    p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: $color-main;
+    }
+  }
+
+  .background {
+    color: $color-backgrounds;
+    margin: 20px 0;
+    width: 100%;
+    display: table;
+  
+    .container {
+      display: table-cell;
+      vertical-align: bottom;
+      padding-bottom: 20px;
+  
+      h1 {
+        color: $yellow;
+        font-family: $font-main;
+        font-size: 5rem;
+        line-height: 105%;
+        margin-bottom: 0;
+        padding: 0 10%;
+      }
+  
+      p {
+        padding: 0 10%;
+        margin-top: 0;
+        font-size: 1.5em;
+      }
+    }
+  }
+  
+  .jumbotron {
+    @include backImage(
+      '../images/web-code.jpg',
+      500px);
+    margin: 0;
+    opacity: 0.85;
+  }
+  
+  .bridge {
+    @include backImage(
+      '../images/bridge.jpg',
+      300px, center center);
+  }
