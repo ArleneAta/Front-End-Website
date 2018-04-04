@@ -1,0 +1,16 @@
+.students-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: em(5);
+}
+.grid-item {
+    margin: em(10);
+    padding: 1.2rem;
+    border: 1px solid $brand-color;
+    justify-content: center;
+    align-content: center;
+
+    p {
+        font-size: em(12);
+    }
+}
