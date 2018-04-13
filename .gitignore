@@ -76,6 +76,7 @@ dwsync.xml
 node_modules/
 
 
+
 # Folders to Ignore #
 #####################
 
@@ -87,6 +88,7 @@ dev/styles/
 dev/styles/*.css
 dev/styles/*.map
 
+gulpfile.js
 
 # Misc files to ignore #
 ########################
