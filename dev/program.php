@@ -16,8 +16,7 @@
         <hr>
     </section>
     <section class="program-application">
-
-    
+        
     <article class="program-entry">
         <h3>Program Entry</h3>
         <h4>Entrance requirements</h4>

@@ -102,3 +102,7 @@ gulpfile.js
 *.swp
 *.vi
 *~
+
+gulpfile.js
+dev/styles/styles.css
+gulpfile.js

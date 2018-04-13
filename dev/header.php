@@ -37,7 +37,7 @@
 				<li><a href="./schedule.php">Schedule</a></li>
 				<li><a href="./students.php">Students</a></li>
 				<li><a href="./staff.php">Staff</a></li>
-				<li><a href="./eresources.php">Eresources</a></li>
+				<li><a href="./eresources.php">E-Resources</a></li>
 				<li><a href="./contact.php">Contact</a></li>
 			</ul>
 			</div>	<!-- container div -->
