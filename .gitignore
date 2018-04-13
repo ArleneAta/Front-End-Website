@@ -100,3 +100,5 @@ dev/styles/*.map
 *.swp
 *.vi
 *~
+
+gulpfile.js

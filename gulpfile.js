@@ -65,9 +65,7 @@ gulp.task('watch-autoprefixer', function(){
 // BrowserSync Task
 gulp.task('browserSync', function(){
 	browserSync.init({
-		server: {
-			baseDir: 'dev'
-		}
+		proxy: "localhost:8080/front-end/dev"
 	});
 });
 
