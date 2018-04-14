@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SSD Website</title>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <link rel="stylesheet" href="./styles/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
@@ -20,17 +21,23 @@
 	</script>
 	
 =======
+=======
+>>>>>>> 830088ab2ae5ce6f184b55e106c281b37abb9445
 	<link rel="stylesheet" href="./styles/styles.css">
 	<link rel="stylesheet" href="./css/calendar.css">
 	<link rel="stylesheet" href="./css/custom_1.css">
 	<link rel="stylesheet" href="./css/demo.css">
 	<script src="./js/show-nav.js"></script>   
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<<<<<<< HEAD
+>>>>>>> 830088ab2ae5ce6f184b55e106c281b37abb9445
+=======
 >>>>>>> 830088ab2ae5ce6f184b55e106c281b37abb9445
 </head>
 <body>
 <div class="wrapper">
     <header>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<div class="topnav" id="myTopnav">
 			<a href="./index.php" class="logo">
@@ -50,6 +57,8 @@
 	</header>
 	
 =======
+=======
+>>>>>>> 830088ab2ae5ce6f184b55e106c281b37abb9445
 	<button class="hamburger">
 			<div class="hamburger-content">
 				<span class="hamburger-icon" tabindex="-1">

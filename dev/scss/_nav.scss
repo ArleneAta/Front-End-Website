@@ -141,6 +141,85 @@
     nav li:last-child a {
         border-bottom: 1px solid #afafaf;
     }
+<<<<<<< HEAD
+=======
+}
+@media only screen and (max-width: 580px){
+
+	/* Switch Multi-Column Layout to
+	   single column layout here */
+	
+
+	/* Mobile Navigation Styles */
+
+    /* Hamburger Styles */
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        color: white;
+        line-height: 1;
+        font-size: 2.4em;
+    }
+
+    .hamburger:focus,
+    .hamburger-icon:focus {
+        outline: none;
+    }
+    
+    .hamburger:focus .hamburger-icon {
+        outline: 5px solid #69c1db;
+    }
+
+    .hamburger-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+		align-items: center;
+		height: auto;
+    }
+
+    nav {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: height 0.3s ease;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav a {
+        line-height: 40px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid #afafaf;
+    }
+
+    nav li:last-child a {
+        border-bottom: 1px solid #afafaf;
+    }
+>>>>>>> 830088ab2ae5ce6f184b55e106c281b37abb9445
 
     .show nav {
         height: 126px;
@@ -149,4 +228,7 @@
 
 }
 
+<<<<<<< HEAD
+>>>>>>> 830088ab2ae5ce6f184b55e106c281b37abb9445
+=======
 >>>>>>> 830088ab2ae5ce6f184b55e106c281b37abb9445
