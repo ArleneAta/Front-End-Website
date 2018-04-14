@@ -20,9 +20,9 @@
             <div class="radio-group">
                 <label>Are you a/an:</label>
                 <span><input type="radio" id="contactChoice1"
-                name="contact" value="email" class="radio-group" checked="checked" >Current Student</span>
+                name="contact" value="email" class="radio-group">Current Student</span>
                 <span><input type="radio" id="contactChoice2"
-                name="contact" value="phone" class="radio-group">Prospective Student</span>
+                name="contact" value="phone" class="radio-group" checked="checked" >Prospective Student</span>
                 <span><input type="radio" id="contactChoice3"
                 name="contact" value="mail" class="radio-group">Instructor</span>
             </div>

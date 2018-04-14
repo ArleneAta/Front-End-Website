@@ -48,6 +48,7 @@ gulp.task('autoprefixer', function(){
 
 });
 
+
 // Watch Task
 gulp.task('watch', function(){
 	gulp.watch('dev/scss/**/*.scss', ['sass']);
@@ -63,12 +64,18 @@ gulp.task('watch-autoprefixer', function(){
 });
 
 // BrowserSync Task
+// gulp.task('browserSync', function(){
+// 	browserSync.init({
+// 		server: {
+// 			baseDir: 'dev'
+// 		}
+// 	});
+// });
 gulp.task('browserSync', function(){
 	browserSync.init({
-		proxy: "localhost:8080/front-end/dev"
+		proxy: "localhost:8080//FrontEndWebsite/SSDSITE/dev"
 	});
 });
-
 // Useref Task
 gulp.task('useref', function(){
 

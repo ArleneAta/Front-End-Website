@@ -1,83 +1,152 @@
-nav {
-	header & {
-		background-color: darken($bg-footer-color, 15%);
-	}
-
-	.branding {
-		// float: left;
-		display: none;
-		@include break(1000px) {
-			display: block;
-		}
-	}
-
-	.branding h1 {
-		font-size: 2.75rem;
-		overflow: hidden;
-		margin: 0;
-		color: $yellow;
-	}
-
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		// @include clearfix;
-	}
-
-	ul li {		
-		padding: 10px 5px;
-	}
-
-	ul li a {
-		text-decoration: none;
-		padding: 15px 5px;
-		color: white;
-		font-size: 1.2em;
-		&:hover {			
-			color: $yellow;
-		}
-
-		header &:hover {
-			background-color: darken($blue, 20%);
-		}
-	}
+.topnav {
+    background-color: $bg-footer-color;
+	overflow: hidden;
 }
 
-nav .container {
-	@include flex-layout-row;
-	justify-content: space-between;
-	
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size: 20px bold;
+	//margin: 0;
 }
-.main-nav {
-    height:$header-height;
-   
-    ul {
-        @include flex-layout-row;
-        margin: 0;
-    }
-    li {
-        // height:$header-height;
-		// flex: 1;
-		display: flex;
-		align-items: center;
-        list-style-type: none;
-        padding: $half-padding;
 
-        // #{$link-hover-selector}{
-        //     border-bottom: 4px $site-highlight-color solid;
-        //     background-color: $bg-nav-hover-color;
-        // }
-    }
-    // a {
-    //     display: block;
-    //     text-decoration: none;
-    //     color: $text-color-med;
-    //     font-size: 1.2em;
-    // }
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.padding-rest-of-nav {
+	padding: 40px;
+}
+
+<<<<<<< HEAD
+/* When the screen is less than 855 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 855px) {
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+	  float: right;
+	  display: block;
+	}
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 855px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.topnav.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+  }
+=======
     @include mq($phoneLandscape){
         height: $header-height-mobile;
        @include center;
     }
 }
+@media only screen and (max-width: 580px){
+
+	/* Switch Multi-Column Layout to
+	   single column layout here */
+	
+
+	/* Mobile Navigation Styles */
+
+    /* Hamburger Styles */
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        color: white;
+        line-height: 1;
+        font-size: 2.4em;
+    }
+
+    .hamburger:focus,
+    .hamburger-icon:focus {
+        outline: none;
+    }
+    
+    .hamburger:focus .hamburger-icon {
+        outline: 5px solid #69c1db;
+    }
+
+    .hamburger-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+		align-items: center;
+		height: auto;
+    }
+
+    nav {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: height 0.3s ease;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav a {
+        line-height: 40px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid #afafaf;
+    }
+
+    nav li:last-child a {
+        border-bottom: 1px solid #afafaf;
+    }
+
+    .show nav {
+        height: 126px;
+    }
+    
+
+}
+
+>>>>>>> 830088ab2ae5ce6f184b55e106c281b37abb9445
