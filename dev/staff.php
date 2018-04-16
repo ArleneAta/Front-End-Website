@@ -3,7 +3,12 @@
 ?> 
 <main class="staff">
 
-    <h1>Faculty</h1>
+    <section class="background">
+		<div class="container">
+            <h1>Faculty</h1>
+        </div>
+    </section>
+  
     <div class="grid-container">
         
         <!-- read students csv file and place into grid items -->
@@ -16,7 +21,7 @@
             }
 
             foreach ($staff as $each){
-                echo '<div class="grid-item"> <p>'. $each[0] . '</p><p> ' . $each[1] . '</p><p>'. $each[2].'</p></div>';
+                echo '<div class="grid-item staff-items"> <p><strong>'. $each[0] . '</strong></p><p><em> ' . $each[1] . '</em></p><p>'. $each[2].'</p></div>';
             }
         ?>   
     </div>

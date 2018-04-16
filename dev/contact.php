@@ -3,8 +3,12 @@
 ?> 
 <main class="contact">
 
-    <h1>Contact</h1>
-
+    <section class="background">
+		<div class="container">
+            <h1>Contact</h1>        
+        </div>
+    </section>
+    <div class="form-container">
     <form action="#" method="post" onSubmit="alert('Thank you. We have received your information and we will contact your shortly.');">
     <ul class="form-style-1">
         <li><label >Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" id ="first" placeholder="First" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" required/></li>
@@ -36,6 +40,7 @@
         </li>   
     </ul>
     </form>
+    </div>
 </main>
 <?php
     include("footer.php");

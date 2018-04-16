@@ -1,3 +1,12 @@
+.form-container {
+    background: rgba(153, 153, 153, 0.4);
+    margin: em(50);
+    width: 40%;
+    margin: auto;
+    margin-bottom: em(50);
+    box-shadow: 5px 3px 2px rgba(153, 153, 153, 0.9);
+    border-radius: 6%;
+}
 .form-style-1 {
     margin:10px auto;
     max-width: 400px;
@@ -30,6 +39,7 @@ textarea,
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     border:1px solid #BEBEBE;
+    border-radius: 7%;
     padding: 7px;
     margin:0px;
     outline: none;  
@@ -48,6 +58,7 @@ textarea,
     -webkit-box-shadow: 0 0 8px #88D5E9;
     box-shadow: 0 0 8px #88D5E9;
     border: 1px solid #88D5E9;
+    border-radius: 7%;
 }
 .form-style-1 .field-divided{
     width: 49%;
@@ -64,12 +75,15 @@ textarea,
     padding: 8px 15px 8px 15px;
     border: none;
     color: #fff;
+    border-radius:7%;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
     background: #4691A4;
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
+    border-radius:7%;
+
 }
 .form-style-1 .required{
     color:red;
@@ -81,5 +95,13 @@ textarea,
     }
     .radio-group span{
         display: block;
+    }
+    .form-container{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .form-container {
+        width: 70%;
     }
 }

@@ -144,12 +144,8 @@ var events = {
 '	04-18-2018	'	: [{content: '	Project 1 - Phase 3	Pat McGee		', allDay: true}],
 '	04-19-2018	'	: [{content: '	iOS Development	Pat McGee		', allDay: true}],
 '	04-20-2018	'	: [{content: '	Industry Project Preparation Day			', allDay: true}],
-	
-							
-
-
-	'16-04-2018' : [{content : 'Industry Project, Pat McGee', allDay: true, endDate: '11-05-2018'}],
-	'16-12-2017' : [{content : 'Christmas Break', allDay: true, endDate: '07-01-2018'}]
+	'04-16-2018' : [{content : 'Industry Project, Pat McGee', allDay: true, endDate: '05-11-2018'}],
+	'12-16-2017' : [{content : 'Christmas Break', allDay: true, endDate: '01-07-2018'}]
 },
 t = new Date(),
 //Creation of today event

@@ -2,8 +2,11 @@
     include("header.php");
 ?> 
 <main class="students">
-
-    <h1>Current Students</h1>
+    <section class="background">
+		<div class="container">
+            <h1>Current Students</h1>        
+        </div>
+    </section>
 
     <div class="grid-container">
         
@@ -17,7 +20,7 @@
             }
 
             foreach ($students as $stud){
-                echo '<div class="grid-item"> <p>'. $stud[1] . ' ' . $stud[0] . '</p><p>'. $stud[2].'</p></div>';
+                echo '<div class="grid-item student-items"> <p><strong>'. $stud[1] . ' ' . $stud[0] . '</strong></p><p>'. $stud[2].'</p></div>';
             }
         ?>   
     </div>

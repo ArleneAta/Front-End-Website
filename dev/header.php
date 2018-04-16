@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SSD Website</title>
     <link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="./css/calendar.css"> 
+	<link rel="stylesheet" href="./css/custom_1.css">
+	<!-- <link rel="stylesheet" href="./css/demo.css"> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		function myFunction() {
@@ -26,7 +29,7 @@
 					<img src="images/bcit-logo.png" alt="BCIT Logo">
 			</a>
 			<div class="padding-rest-of-nav">
-			<a href="./index.php">Home</a>
+			<a href="./index.php"><img src="./images/glyphicons-21-home.png" alt="home icon"></a>
 			<a href="./program.php">Program</a>
 			<a href="./schedule.php">Schedule</a>
 			<a href="./students.php">Students</a>

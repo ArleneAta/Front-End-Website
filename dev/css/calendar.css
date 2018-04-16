@@ -21,7 +21,7 @@
 	  height: 30px;
 	  line-height: 30px;
 	  background: #ccc;
-	  color: #fff;
+	  color: #999;
   }
   
   .fc-calendar .fc-body {
@@ -72,7 +72,7 @@
   }
   
   .fc-calendar .fc-row > div {
-	  border-right: 1px solid #ddd;
+	  border-right: 1px solid rgb(37, 37, 37);
 	  padding: 4px;
 	  overflow: hidden;
 	  position: relative;
@@ -89,8 +89,8 @@
 	  font-size: 20px;
 	  line-height: 20px;
 	  font-weight: 700;
-	  color: #ddd;
-	  text-shadow: 0 -1px 0 rgba(255,255,255,0.8);
+	  color: rgb(46, 45, 45);
+	  text-shadow: 0 -1px 0 rgba(153,153,153,0.8);
 	  bottom: 5px;
 	  right: 5px;
 	  text-align: right;
@@ -106,7 +106,7 @@
   }
   
   .fc-calendar .fc-row > div.fc-today {
-	  background: #fff4c3;
+	  background: #2e2d30;
   }
   
   .fc-calendar .fc-row > div.fc-out {
