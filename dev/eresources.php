@@ -59,7 +59,7 @@
         </article>
         <article class="eresources-article-list">
             <div>
-            <h2>iOS Development</h2>
+            <h2>Android Development</h2>
             <ul>
                 <li><a href="https://developer.android.com/guide/index.html">Official Android site</a></li>
                 <li><a href="https://www.androidhive.info/">Android Hive</a></li>

@@ -21,7 +21,7 @@
 	  height: 30px;
 	  line-height: 30px;
 	  background: #ccc;
-	  color: #999;
+	  color: rgba(45,45,45,0.9);
   }
   
   .fc-calendar .fc-body {

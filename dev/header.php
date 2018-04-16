@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 	<link rel="stylesheet" href="./css/calendar.css"> 
 	<link rel="stylesheet" href="./css/custom_1.css">
-	<!-- <link rel="stylesheet" href="./css/demo.css"> -->
+	<!-- <link rel="stylesheet" href="./css/timeline.css"> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		function myFunction() {
