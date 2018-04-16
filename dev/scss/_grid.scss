@@ -31,3 +31,17 @@
   border-radius: 7%;
   box-shadow: 1px 1px 1px;
 }
+.staff-img {
+
+    @include backImage('../images/bcit.jpg', 400px);
+    margin: 0;
+    opacity: 0.85;
+    grid-area: sec_one;
+}
+.students-img {
+
+    @include backImage('../images/pg-game.jpg', 400px);
+    margin: 0;
+    opacity: 0.85;
+    grid-area: sec_one;
+}

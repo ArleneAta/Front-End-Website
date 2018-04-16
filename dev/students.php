@@ -2,7 +2,7 @@
     include("header.php");
 ?> 
 <main class="students">
-    <section class="background">
+    <section class="background students-img">
 		<div class="container">
             <h1>Current Students</h1>        
         </div>

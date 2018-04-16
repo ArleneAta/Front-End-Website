@@ -2,7 +2,7 @@
     include("header.php");
 ?> 
 <main class="schedule">
-	<section class="background">
+	<section class="background schedule-img">
 		<div class="container">
 			<h1>Class Schedule</h1>
 		</div>

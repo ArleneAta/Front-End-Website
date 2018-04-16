@@ -494,8 +494,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 5rem;
       line-height: 105%;
       margin-bottom: 0;
-      padding: 0 10%;
-      text-shadow: 0.5px 0.5px 0.5px lightgrey; }
+      padding: 0 10%; }
     .background .container p {
       padding: 0 10%;
       margin-top: 0;
@@ -606,6 +605,26 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(153, 153, 153, 0.1);
   border-radius: 7%;
   box-shadow: 1px 1px 1px; }
+
+.staff-img {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/bcit.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+  margin: 0;
+  opacity: 0.85;
+  grid-area: sec_one; }
+
+.students-img {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/pg-game.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+  margin: 0;
+  opacity: 0.85;
+  grid-area: sec_one; }
 
 .form-container {
   background: rgba(153, 153, 153, 0.4);

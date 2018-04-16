@@ -3,7 +3,7 @@
 ?> 
 <main class="staff">
 
-    <section class="background">
+    <section class="background staff-img">
 		<div class="container">
             <h1>Faculty</h1>
         </div>
