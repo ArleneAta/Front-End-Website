@@ -9,7 +9,10 @@
   border: none;
   border-radius: 4px;
   font-family: Montserrat, Arial, sans-serif;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #EEE8D6; }
 
 .btn-default {
@@ -214,8 +217,8 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 /**
@@ -321,7 +324,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -343,7 +347,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
@@ -419,10 +422,12 @@ html {
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 img {
   max-width: 100%;
@@ -501,6 +506,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.5em; }
 
 .jumbotron {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6))), url("../images/web-code.jpg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/web-code.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -510,6 +516,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.85; }
 
 .bridge {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6))), url("../images/bridge.jpg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/bridge.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -587,14 +594,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.625em;
   padding: 1.2rem;
   border: 1px solid #999999;
-  justify-content: center;
-  align-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
   .grid-item p {
     font-size: 0.9375em;
     -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
     transition: font-size 0.3s ease, background-color 0.3s ease; }
 
 .grid-item:hover p {
@@ -604,9 +611,11 @@ h1, h2, h3, h4, h5, h6 {
 .staff-items {
   background: rgba(153, 153, 153, 0.1);
   border-radius: 7%;
-  box-shadow: 1px 1px 1px; }
+  -webkit-box-shadow: 1px 1px 1px;
+          box-shadow: 1px 1px 1px; }
 
 .staff-img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6))), url("../images/bcit.jpg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/bcit.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -617,6 +626,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: sec_one; }
 
 .students-img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6))), url("../images/pg-game.jpg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/pg-game.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -632,7 +642,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 40%;
   margin: auto;
   margin-bottom: 3.125em;
-  box-shadow: 5px 3px 2px rgba(153, 153, 153, 0.9);
+  -webkit-box-shadow: 5px 3px 2px rgba(153, 153, 153, 0.9);
+          box-shadow: 5px 3px 2px rgba(153, 153, 153, 0.9);
   border-radius: 6%; }
 
 .form-style-1 {
@@ -680,7 +691,6 @@ textarea {
 .form-style-1 input[type=url]:focus,
 .form-style-1 input[type=email]:focus,
 .form-style-1 textarea:focus {
-  -moz-box-shadow: 0 0 8px #88D5E9;
   -webkit-box-shadow: 0 0 8px #88D5E9;
   box-shadow: 0 0 8px #88D5E9;
   border: 1px solid #88D5E9;
@@ -736,11 +746,17 @@ footer {
     color: white;
     padding: 1.875rem; }
   footer nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 80%;
     font-size: 0.8em;
     padding: 0.9375rem; }
@@ -754,11 +770,15 @@ footer {
   display: grid;
   /*grid-template-columns: repeat(2, minmax(auto, 540px));*/
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   grid-template-areas: "sec_one sec_one" "sec_two sec_two" "sec_three sec_three"; }
 
 .program-img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6))), url("../images/technology.jpg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/technology.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -902,7 +922,6 @@ footer {
   top: 20px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
@@ -918,7 +937,8 @@ footer {
   margin: 0 1px;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  box-shadow: inset 0 1px rgba(153, 153, 153, 0.2); }
+  -webkit-box-shadow: inset 0 1px rgba(153, 153, 153, 0.2);
+          box-shadow: inset 0 1px rgba(153, 153, 153, 0.2); }
 
 .custom-header nav span:first-child {
   border-radius: 3px 0 0 3px; }
@@ -961,7 +981,8 @@ footer {
 .fc-calendar .fc-head {
   background: rgba(153, 153, 153, 0.2);
   color: rgba(153, 153, 153, 0.9);
-  box-shadow: inset 0 1px 0 rgba(153, 153, 153, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(153, 153, 153, 0.2);
+          box-shadow: inset 0 1px 0 rgba(153, 153, 153, 0.2);
   border-radius: 20px 20px 0 0;
   height: 40px;
   line-height: 40px;
@@ -994,11 +1015,13 @@ footer {
   padding: 20px; }
 
 .fc-calendar .fc-row {
-  box-shadow: inset 0 -1px 0 rgba(153, 153, 153, 0.2);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(153, 153, 153, 0.2);
+          box-shadow: inset 0 -1px 0 rgba(153, 153, 153, 0.2);
   border: none; }
 
 .fc-calendar .fc-row:last-child {
-  box-shadow: none; }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .fc-calendar .fc-row:first-child > div:first-child {
   border-radius: 10px 0 0 0; }
@@ -1013,17 +1036,20 @@ footer {
   border-radius: 0 0 10px 0; }
 
 .fc-calendar .fc-row > div {
-  box-shadow: -1px 0 0 rgba(153, 153, 153, 0.2);
+  -webkit-box-shadow: -1px 0 0 rgba(153, 153, 153, 0.2);
+          box-shadow: -1px 0 0 rgba(153, 153, 153, 0.2);
   border: none;
   padding: 10px;
   cursor: pointer; }
 
 .fc-calendar .fc-row > div:first-child {
-  box-shadow: none; }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .fc-calendar .fc-row > div.fc-today {
   background: transparent;
-  box-shadow: inset 0 0 100px rgba(153, 153, 153, 0.1); }
+  -webkit-box-shadow: inset 0 0 100px rgba(153, 153, 153, 0.1);
+          box-shadow: inset 0 0 100px rgba(153, 153, 153, 0.1); }
 
 .fc-calendar .fc-row > div.fc-today:after {
   content: '';
@@ -1034,10 +1060,7 @@ footer {
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(153, 153, 153, 0.15)), to(rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(153, 153, 153, 0)), color-stop(0.5, rgba(153, 153, 153, 0.15)), color-stop(0.501, rgba(153, 153, 153, 0)), color-stop(1, rgba(153, 153, 153, 0)));
-  background: -moz-linear-gradient(top, rgba(153, 153, 153, 0.15), rgba(0, 0, 0, 0.25)), -moz-linear-gradient(left top, rgba(153, 153, 153, 0), rgba(153, 153, 153, 0.15) 50%, rgba(153, 153, 153, 0) 50%, rgba(153, 153, 153, 0));
-  background: -o-linear-gradient(top, rgba(153, 153, 153, 0.15), rgba(0, 0, 0, 0.25)), -o-llinear-gradient(left top, rgba(153, 153, 153, 0), rgba(153, 153, 153, 0.15) 50%, rgba(153, 153, 153, 0) 50%, rgba(153, 153, 153, 0));
-  background: -ms-linear-gradient(top, rgba(153, 153, 153, 0.15), rgba(0, 0, 0, 0.25)), -ms-linear-gradient(left top, rgba(153, 153, 153, 0), rgba(153, 153, 153, 0.15) 50%, rgba(153, 153, 153, 0) 50%, rgba(153, 153, 153, 0));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(153, 153, 153, 0.15)), to(rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right bottom, from(rgba(153, 153, 153, 0)), color-stop(50%, rgba(153, 153, 153, 0.15)), color-stop(50%, rgba(153, 153, 153, 0)), to(rgba(153, 153, 153, 0)));
   background: linear-gradient(top, rgba(153, 153, 153, 0.15), rgba(0, 0, 0, 0.25)), linear-gradient(left top, rgba(153, 153, 153, 0), rgba(153, 153, 153, 0.15) 50%, rgba(153, 153, 153, 0) 50%, rgba(153, 153, 153, 0)); }
 
 .fc-calendar .fc-row > div > div {
@@ -1100,17 +1123,20 @@ footer {
   .fc-calendar .fc-row > div {
     float: none;
     min-height: 50px;
-    box-shadow: inset 0 -1px rgba(153, 153, 153, 0.2) !important;
+    -webkit-box-shadow: inset 0 -1px rgba(153, 153, 153, 0.2) !important;
+            box-shadow: inset 0 -1px rgba(153, 153, 153, 0.2) !important;
     border-radius: 0px !important; }
 
   .fc-calendar .fc-row > div:empty {
     min-height: 0;
     height: 0;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     padding: 0; }
 
   .fc-calendar .fc-row {
-    box-shadow: none; }
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
   .fc-calendar .fc-head {
     display: none; }
@@ -1152,11 +1178,15 @@ footer {
   display: grid;
   /*grid-template-columns: repeat(2, minmax(auto, 540px));*/
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   grid-template-areas: "sec_one sec_one" "sec_two sec_two" "sec_three sec_three"; }
 
 .eresources-img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6))), url("../images/computer-on-desk.jpg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../images/computer-on-desk.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1205,9 +1235,6 @@ footer {
   width: 300px;
   text-align: center;
   -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
   transition: font-size 0.3s ease, background-color 0.3s ease; }
 .eresources-article-list li a:hover {
   font-size: 30px;
@@ -1218,7 +1245,3 @@ footer {
     grid-area: sec_three;
     display: grid;
     grid-template-columns: 1fr; } }
-
-
-
-/*# sourceMappingURL=styles.css.map */
